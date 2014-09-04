@@ -27,6 +27,7 @@ module CalLinker
         e.dtstart = @event.starting_at
         e.dtend = @event.ending_at
         e.summary = @event.name
+        e.description = @event.description
       end
       calendar
     end

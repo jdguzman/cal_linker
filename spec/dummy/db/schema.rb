@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20140901183739) do
     t.string   "name"
     t.datetime "starting_at"
     t.datetime "ending_at"
+    t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

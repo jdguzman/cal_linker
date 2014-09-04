@@ -45,6 +45,7 @@ module CalLinker
         expect(received_file.dtstart.to_s).to eq(vcs_file.dtstart.to_s)
         expect(received_file.dtend.to_s).to eq(vcs_file.dtend.to_s)
         expect(received_file.summary).to eq(vcs_file.summary)
+        expect(received_file.description).to eq(vcs_file.description)
       end
     end
 
@@ -54,6 +55,7 @@ module CalLinker
         e.dtstart = event.starting_at
         e.dtend = event.ending_at
         e.summary = event.name
+        e.description = event.description
       end
       calendar
     end

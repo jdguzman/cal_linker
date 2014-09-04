@@ -4,6 +4,7 @@ class CreateTestEvents < ActiveRecord::Migration
       t.string :name
       t.datetime :starting_at
       t.datetime :ending_at
+      t.text :description
 
       t.timestamps
     end
