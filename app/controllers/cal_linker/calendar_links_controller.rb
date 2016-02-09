@@ -28,6 +28,7 @@ module CalLinker
         e.dtend = @event.ending_at
         e.summary = @event.name
         e.description = @event.description
+        e.location = @event.location if @event.respond_to? :location
       end
       calendar
     end
